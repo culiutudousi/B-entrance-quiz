@@ -3,6 +3,7 @@ package com.thoughtworks.capability.gtb.entrancequiz.service;
 import com.thoughtworks.capability.gtb.entrancequiz.domain.Student;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -11,6 +12,7 @@ import java.util.List;
 public class StudentService {
     private final List<Student> students = new ArrayList<>();
 
+    @PostConstruct
     private void initStudents() {
         Arrays.asList(
                 "成吉思汗",
