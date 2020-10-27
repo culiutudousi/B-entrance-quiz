@@ -20,7 +20,7 @@ public class StudentController {
     }
 
     @PostMapping
-    public void addStudent(@RequestParam String studentName) {
-        studentService.addStudent(studentName);
+    public Integer addStudent(@RequestParam String studentName) {
+        return studentService.addStudent(studentName);
     }
 }

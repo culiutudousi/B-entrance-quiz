@@ -33,8 +33,9 @@ public class StudentService {
         ).forEach(this::addStudent);
     }
 
-    public void addStudent(String name) {
+    public Integer addStudent(String name) {
         students.add(new Student(students.size() + 1, name));
+        return students.size();
     }
 
     public List<Student> getStudents() {
