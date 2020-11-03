@@ -10,6 +10,7 @@ import java.util.List;
 
 @Service
 public class StudentService {
+    //TODO GTB-知识点: - StudentService.java:13 数据存储的操作，不属于service职责，应该抽取repository来做。
     private final List<Student> students = new ArrayList<>();
 
     @PostConstruct

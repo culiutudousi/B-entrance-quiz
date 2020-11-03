@@ -16,11 +16,13 @@ public class GroupController {
     @Autowired
     GroupService groupService;
 
+    //TODO GTB-完成度: - GroupController.java:19 获取分组与需求不符合
     @GetMapping
     public List<Integer> getGroups() {
         return groupService.getGroups();
     }
 
+    //TODO GTB-完成度: - GroupController.java:24 分组与需求不符合
     @PostMapping
     public List<Integer> redistributeGroup() {
         groupService.redistributeGroup();
